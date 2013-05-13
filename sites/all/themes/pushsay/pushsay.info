@@ -1,0 +1,11 @@
+name = Push:
+description = The theme design for pushsay.com, and it is simple.
+core = 7.x
+
+regions[header] = Header
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer
+
+stylesheets[all][] = bootstrap/css/bootstrap.css
+stylesheets[all][] = bootstrap/css/bootstrap-responsive.css
