@@ -2,3 +2,38 @@
  * @file
  * Pushsay.com common styles
  */
+
+
+/****************
+ * header 
+ ****************/
+#header{padding-top:20px;background: #f3f3f3;border-bottom:5px solid #f84242;}
+
+/*navbar*/
+#logo{float: left;margin:0 auto;color: #333;font:200 35px/40px 'British Rail Dark', arial, sans-serif; }
+#logo a{color: #000;}
+#logo a:hover{color: #f84242;text-decoration: none;}
+
+.navbar .nav{float: right;}
+.navbar .nav > li > a{color: #333;text-shadow:none;}
+.navbar .nav > li > a:hover,
+.navbar .nav > li.active > a:hover,
+.navbar .nav > li.active > a{color:#f84242;background: none;box-shadow: none;}
+.navbar .nav > li.active > a{font-weight: 700;}
+
+.language-switcher-locale-url{list-style: none;}
+.language-switcher-locale-url li{display: inline;}
+
+
+/******************
+ * front
+ ******************/
+.front{background:#000 url(../images/about-slider/about-slider-1.jpg) no-repeat center center fixed;background-size: cover;}
+.front #header,
+.front #logo,
+.front #logo a{color: #fff;}
+.front #logo a:hover{color: #f84242;}
+.front #header .navbar .nav a{color: #fff;}
+.front #header .navbar .nav a:hover{color: #f84242;}
+
+.front #header{background: none;border-bottom:none;}

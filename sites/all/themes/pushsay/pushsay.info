@@ -9,3 +9,6 @@ regions[footer] = Footer
 
 stylesheets[all][] = bootstrap/css/bootstrap.css
 stylesheets[all][] = bootstrap/css/bootstrap-responsive.css
+stylesheets[all][] = css/pushsay.css
+
+scripts[] = bootstrap/js/bootstrap.min.js

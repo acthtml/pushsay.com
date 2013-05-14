@@ -1,27 +1,30 @@
 <div id="page">
   <div id="header">
     <div class="container">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <?php if ($site_name || $site_slogan): ?>
-          <?php if ($site_name): ?>
-            <?php if ($title): ?>
-              <div id="logo"><strong>
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
-              </strong></div>
-            <?php else: /* Use h1 when the content title is empty */ ?>
-              <h1 id="logo">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
-              </h1>
+      <div class="navbar">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <?php if ($site_name || $site_slogan): ?>
+            <?php if ($site_name): ?>
+              <?php if ($title): ?>
+                <div id="logo"><strong>
+                  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+                </strong></div>
+              <?php else: /* Use h1 when the content title is empty */ ?>
+                <h1 id="logo">
+                  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+                </h1>
+              <?php endif; ?>
             <?php endif; ?>
-          <?php endif; ?>
-      <?php endif; ?>
-      <div class="nav-collapse collapse">
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('nav')))); ?>
-      </div><!--/.nav-collapse -->
+        <?php endif; ?>
+        <div class="nav-collapse collapse">
+          <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('nav')))); ?>
+        </div><!--/.nav-collapse -->
+      </div>
+      
 
       <?php print render($page['header']); ?>
 
