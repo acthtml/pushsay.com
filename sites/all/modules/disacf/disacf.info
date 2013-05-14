@@ -1,0 +1,7 @@
+name = disable ACF
+description = disable the ACF for CKeditor
+dependencies[] = wysiwyg
+core = 7.x
+package = pushsay.com
+
+version = 7.0
