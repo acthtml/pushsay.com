@@ -1,7 +1,7 @@
 <div id="page">
   <div id="header">
     <div class="container">
-      <div class="navbar">
+      <div class="navbar clearfix">
         <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -24,7 +24,7 @@
           <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('nav')))); ?>
         </div><!--/.nav-collapse -->
       </div>
-      
+
 
       <?php print render($page['header']); ?>
 
